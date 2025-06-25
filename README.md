@@ -26,3 +26,30 @@ This project uses conda for virtual environment management and pip for package d
    ```bash
    pip install -r requirements.txt
    ```
+
+### Environment Variables
+
+Create a `.env` file in the project root with:
+
+```bash
+KAGGLE_USERNAME=your_username
+KAGGLE_KEY=your_api_key
+```
+
+### Git LFS
+
+This project uses Git LFS for large files. Install Git LFS and set it up:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+### Code Formatting
+
+This project uses Ruff for formatting and linting:
+
+```bash
+ruff format .
+ruff check --fix .
+```

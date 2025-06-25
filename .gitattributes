@@ -5,6 +5,8 @@ data/** filter=lfs diff=lfs merge=lfs -text
 *.ipynb filter=lfs diff=lfs merge=lfs -text
 *.py filter=lfs diff=lfs merge=lfs -text
 *.txt filter=lfs diff=lfs merge=lfs -text
+*.code-snippets filter=lfs diff=lfs merge=lfs -text
+*.json filter=lfs diff=lfs merge=lfs -text
 *.ipynb !text -filter -merge -diff
 *.py !text -filter -merge -diff
 *.md !text -filter -merge -diff

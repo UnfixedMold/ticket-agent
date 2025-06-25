@@ -1,0 +1,24 @@
+{
+	"Set notebook root to project root": {
+		"prefix": "nbroot",
+		"body": [
+			"import os",
+			"import sys",
+			"",
+			"project_root = os.path.abspath(os.path.join(os.getcwd(), \"..\"))",
+			"if project_root not in sys.path:",
+			"    sys.path.insert(0, project_root)",
+			"    os.chdir(project_root)"
+		],
+		"description": "Add project root to sys.path and set working directory"
+	},
+	"Enable autoreload for Jupyter": {
+		"prefix": "nbautoreload",
+		"body": [
+			"%load_ext autoreload",
+			"%autoreload 2"
+		],
+		"description": "Enable autoreloading of imports in notebooks"
+	}
+
+}
