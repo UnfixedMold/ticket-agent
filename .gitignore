@@ -24,4 +24,6 @@ wheels/
 .vscode/
 .ipynb_checkpoints
 .DS_Store
-Thumbs.db 
+Thumbs.db
+trainer_output/
+logs/
