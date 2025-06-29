@@ -25,5 +25,5 @@ wheels/
 .ipynb_checkpoints
 .DS_Store
 Thumbs.db
-trainer_output/
-logs/
+training_logs/
+models/

@@ -32,8 +32,8 @@ This project uses conda for virtual environment management and pip for package d
 Create a `.env` file in the project root with:
 
 ```bash
-KAGGLE_USERNAME=your_username
-KAGGLE_KEY=your_api_key
+DEEPSEEK_API_KEY=your_deepseek_api_key
+HF_TOKEN=your_huggingface_token
 ```
 
 ### Git LFS
