@@ -9,7 +9,7 @@ def get_classification_metrics_df(
 ) -> pd.DataFrame:
     report = cast(
         Dict[str, Dict[str, float]],
-        classification_report(y_true, y_pred, output_dict=True),
+        classification_report(y_true, y_pred, output_dict=True, zero_division=0),  # type: ignore
     )
 
     metrics = {
@@ -41,7 +41,7 @@ def get_train_test_metrics_df(
 def get_per_class_metrics_df(y_true, y_pred, model_name, id2label):
     report = cast(
         Dict[str, Dict[str, float]],
-        classification_report(y_true, y_pred, output_dict=True),
+        classification_report(y_true, y_pred, output_dict=True, zero_division=0),  # type: ignore
     )
 
     df = pd.DataFrame(report).drop(columns=["accuracy"]).T
