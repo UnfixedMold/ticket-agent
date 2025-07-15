@@ -33,6 +33,7 @@ Create a `.env` file in the project root with:
 
 ```bash
 DEEPSEEK_API_KEY=your_deepseek_api_key
+OPENAI_API_KEY=your_openai_api_key
 HF_TOKEN=your_huggingface_token
 LANGCHAIN_API_KEY=your_langchain_api_key
 LANGCHAIN_TRACING_V2=true
